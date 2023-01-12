@@ -16,7 +16,7 @@ final class HomeViewModel: ObservableObject {
     private let dataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()
 
-    init() { addSubscribers() }
+    init() {  addSubscribers() }
 
     func addSubscribers() {
         dataService.$coins

@@ -14,9 +14,7 @@ struct HomeView: View {
 
     var body: some View {
         ZStack {
-            Color.theme.background
-                .ignoresSafeArea()
-
+            background
             VStack {
                 homeHeader
                 columnTitles
@@ -40,6 +38,12 @@ struct HomeView_Previews: PreviewProvider {
 
 
 private extension HomeView {
+    
+    var background: some View {
+        Color.theme.background
+            .ignoresSafeArea()
+    }
+
     var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
