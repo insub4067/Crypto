@@ -12,10 +12,13 @@ extension PreviewProvider {
     static var dev: DeveloperPreview { return DeveloperPreview.shared }
 }
 
+#if DEBUG
 class DeveloperPreview {
 
     static let shared = DeveloperPreview()
     private init() { }
+
+    let homeViewModel = HomeViewModel()
 
     let coin = CoinModel(
        id: "bitcoin",
@@ -218,3 +221,4 @@ class DeveloperPreview {
        currentHoldings: 1.5)
 
 }
+#endif

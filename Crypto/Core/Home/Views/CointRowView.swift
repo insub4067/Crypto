@@ -56,7 +56,7 @@ private extension CointRowView {
     @ViewBuilder
     var centerColumn: some View {
         if showHoldingsColumn {
-            VStack {
+            VStack(alignment: .trailing) {
                 Text(coin.currentHoldingsValue.asCurrencyWith2Decimals())
                 Text((coin.currentHoldings ?? 0).asNumberString())
             }
@@ -65,7 +65,7 @@ private extension CointRowView {
     }
 
     var rightColumn: some View {
-        VStack {
+        VStack(alignment: .trailing) {
             Text(coin.currentPrice.asCurrencyWith2Decimals())
                 .bold()
                 .foregroundColor(Color.theme.accent)
@@ -76,6 +76,6 @@ private extension CointRowView {
                     Color.theme.red
                 )
         }
-        .frame(width: UIScreen.main.bounds.width / 3)
+        .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
     }
 }
