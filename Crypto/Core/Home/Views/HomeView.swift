@@ -17,6 +17,7 @@ struct HomeView: View {
             background
             VStack {
                 homeHeader
+                SearchBarView(searchText: $viewModel.searchText)
                 columnTitles
                 coinsList
                 porfolioCoinsList
@@ -25,17 +26,6 @@ struct HomeView: View {
         }
     }
 }
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            HomeView()
-                .navigationBarHidden(true)
-        }
-        .environmentObject(dev.homeViewModel)
-    }
-}
-
 
 private extension HomeView {
     
@@ -47,7 +37,7 @@ private extension HomeView {
     var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                .animation(.none)
+                .animation(.none, value: showPortfolio)
                 .background(
                     CirecleButtonAnimationView(animate: $showPortfolio)
                 )
@@ -108,5 +98,15 @@ private extension HomeView {
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
         .padding(.horizontal)
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            HomeView()
+                .navigationBarHidden(true)
+        }
+        .environmentObject(dev.homeViewModel)
     }
 }

@@ -19,6 +19,8 @@
 		C6145EEA296FEFCC00ABE9A1 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145EE9296FEFCC00ABE9A1 /* CoinImageService.swift */; };
 		C6145EEC296FF11600ABE9A1 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145EEB296FF11600ABE9A1 /* CoinImageViewModel.swift */; };
 		C6145EEE29712E6D00ABE9A1 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145EED29712E6D00ABE9A1 /* LocalFileManager.swift */; };
+		C6145EF12971460700ABE9A1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145EF02971460700ABE9A1 /* SearchBarView.swift */; };
+		C6145EF329719FC300ABE9A1 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145EF229719FC300ABE9A1 /* UIApplication+.swift */; };
 		C675E910296EF6F100F5FBC1 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C675E90F296EF6F100F5FBC1 /* CryptoApp.swift */; };
 		C675E912296EF6F100F5FBC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C675E911296EF6F100F5FBC1 /* ContentView.swift */; };
 		C675E917296EF6F300F5FBC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C675E916296EF6F300F5FBC1 /* Preview Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		C6145EE9296FEFCC00ABE9A1 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		C6145EEB296FF11600ABE9A1 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		C6145EED29712E6D00ABE9A1 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		C6145EF02971460700ABE9A1 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		C6145EF229719FC300ABE9A1 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		C675E90C296EF6F100F5FBC1 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C675E90F296EF6F100F5FBC1 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		C675E911296EF6F100F5FBC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				C675E920296EF89200F5FBC1 /* Color+.swift */,
 				C6145EDA296F0D4D00ABE9A1 /* PreviewProvider+.swift */,
 				C6145EDC296F90B800ABE9A1 /* Double+.swift */,
+				C6145EF229719FC300ABE9A1 /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			children = (
 				C6145EE6296FEED400ABE9A1 /* CoinImage */,
 				C675E929296EFA2D00F5FBC1 /* CircleButton */,
+				C6145EF02971460700ABE9A1 /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6145EF12971460700ABE9A1 /* SearchBarView.swift in Sources */,
 				C6145EE2296FA84E00ABE9A1 /* CoinDataService.swift in Sources */,
 				C675E912296EF6F100F5FBC1 /* ContentView.swift in Sources */,
 				C6145EDF296F97B500ABE9A1 /* HomeViewModel.swift in Sources */,
@@ -277,6 +284,7 @@
 				C6145EEE29712E6D00ABE9A1 /* LocalFileManager.swift in Sources */,
 				C675E927296EF9BA00F5FBC1 /* HomeView.swift in Sources */,
 				C6145EE8296FEEE000ABE9A1 /* CoinImageView.swift in Sources */,
+				C6145EF329719FC300ABE9A1 /* UIApplication+.swift in Sources */,
 				C675E910296EF6F100F5FBC1 /* CryptoApp.swift in Sources */,
 				C675E92B296EFA3C00F5FBC1 /* CircleButtonView.swift in Sources */,
 				C6145ED4296EFC5700ABE9A1 /* CirecleButtonAnimationView.swift in Sources */,
