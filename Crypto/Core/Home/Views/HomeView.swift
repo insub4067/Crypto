@@ -17,6 +17,7 @@ struct HomeView: View {
             background
             VStack {
                 homeHeader
+                HomeStatsView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $viewModel.searchText)
                 columnTitles
                 coinsList

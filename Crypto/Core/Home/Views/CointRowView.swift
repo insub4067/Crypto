@@ -23,19 +23,6 @@ struct CointRowView: View {
     }
 }
 
-struct CointRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CointRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-
-            CointRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
-        }
-    }
-}
-
 private extension CointRowView {
 
     var leftColumn: some View {
@@ -77,5 +64,18 @@ private extension CointRowView {
                 )
         }
         .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+    }
+}
+
+struct CointRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            CointRowView(coin: dev.coin, showHoldingsColumn: true)
+                .previewLayout(.sizeThatFits)
+
+            CointRowView(coin: dev.coin, showHoldingsColumn: true)
+                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.dark)
+        }
     }
 }
