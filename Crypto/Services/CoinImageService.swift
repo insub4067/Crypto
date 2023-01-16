@@ -45,7 +45,7 @@ class CoinImageService {
                 receiveCompletion: NetworkManager.handleCompletion, receiveValue: { [weak self] image in
                     guard let self = self else { return }
                     self.image = image
-//                    self.imageSubscription?.cancel()
+                    self.imageSubscription?.cancel()
                     self.fileManager.saveImage(image: image, imageName: self.imageName, folderName: self.folderName)
             })
     }
